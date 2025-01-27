@@ -2,6 +2,7 @@
 // Requiere el autoload de Composer
 require '../../vendor/autoload.php'; // Asegúrate de que el autoload de Composer esté en la ruta correcta
 
+
 // Conectar a MongoDB
 $cliente = new MongoDB\Client("mongodb://localhost:27017");
 
@@ -31,4 +32,7 @@ if (is_array($datos)) {
     $resultado = $coleccion->insertOne($datos);
     echo "Se insertó un documento con ID: " . $resultado->getInsertedId() . "\n";
 }
+
+
+
 ?>
