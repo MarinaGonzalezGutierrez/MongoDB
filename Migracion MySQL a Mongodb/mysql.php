@@ -6,7 +6,7 @@ $usuario = "root"; // usuario de MySQL
 $clave = ""; // clave del usuario
 $db = "empresa"; //base de datos
 
-//crear coexion
+//crear conexion
 $conn = new mysqli($servidor, $usuario, $clave, $db);
 
 //para comprobar que estoy conectada a la base de datos
